@@ -1,6 +1,6 @@
 import Link from "next/link";
-import style1 from '@/style/main.module.sass';
-import style2 from '@/style/volka.module.sass';
+import style1 from '@/style/main.module.scss';
+import style2 from '@/style/volka.module.scss';
 export default function Home() {
   return (
     <div>
@@ -10,12 +10,12 @@ export default function Home() {
            <span className={style2['.red']}>Facebook</span>
           </Link>
         </li>
-        <li className="green">
+        <li className={style1['green']}>
           <Link href={"/tiktok"}>
             Tiktok
           </Link>
         </li>
-        <li className="red">
+        <li className={style1['red']}>
           <Link href={"/youtube"}>
             Youtube
           </Link>
