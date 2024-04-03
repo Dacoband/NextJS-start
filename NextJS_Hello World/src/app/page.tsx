@@ -1,13 +1,13 @@
 import Link from "next/link";
-import style1 from '@/style/main.module.scss';
-import style2 from '@/style/volka.module.scss';
+import style1 from '@/style/main.module.css';
+import style2 from '@/style/volka.module.css';
 export default function Home() {
   return (
     <div>
       <ul>
         <li className={style1['red']}>
           <Link href={"/facebook"}>
-           <span className={style2['.red']}>Facebook</span>
+          <span className={style2['.red']}>Facebook</span>
           </Link>
         </li>
         <li className={style1['green']}>

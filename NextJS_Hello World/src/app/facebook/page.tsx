@@ -1,18 +1,24 @@
 'use client'
 import { useRouter } from 'next/navigation'
+import Button from 'react-bootstrap/Button'
+
+
 const Facebook = () => {
-    const router = useRouter() // ReLogin smooth, not reload page 
-    const handleBtn = ()=>{
-        router.push("/")
-    }
+    const router = useRouter();
+
+    const handleBtn = () => {
+        router.push("/");
+    };
+
     return (
         <div>
             Facebook Page
             <div>
-                <button onClick={()=> handleBtn()}>Back Home</button>
+                <Button variant="danger">Volka Main</Button>
+                <Button onClick={handleBtn}>Back Home</Button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Facebook;
