@@ -1,7 +1,21 @@
+'use client'
 import Link from "next/link";
 import style1 from '@/style/main.module.css';
 import style2 from '@/style/volka.module.css';
+import AppTable from "@/components/app.table";
+import { useEffect } from "react";
 export default function Home() {
+
+  const fetchData = async() =>{
+      const res = await fetch("http://localhost:8000/blogs");
+      const data = await res.json();
+      console.log("check res: " , data);
+    }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div>
       <ul>
@@ -21,6 +35,7 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+      <AppTable />
     </div>
   )
 }

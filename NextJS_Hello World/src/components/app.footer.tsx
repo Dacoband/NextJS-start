@@ -1,5 +1,5 @@
 'use client'
-const AppFooter = () =>{
+const AppFooter = () => {
     return(
         <div style={{
             background: "#ddd",
@@ -10,3 +10,4 @@ const AppFooter = () =>{
         </div>
     )
 }
+export default AppFooter;
